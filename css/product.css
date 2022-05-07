@@ -1,0 +1,332 @@
+.product-details{
+    width: 100%;
+    padding: 60px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-slider{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-image: url('../img/princess-dress.png');
+    background-size: cover;
+}
+
+.product-images{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.product-images img{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.product-images img.active{
+    opacity: 0.5;
+
+}
+
+.details{
+    width: auto;
+}
+
+.details .product-brand{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.details .product-short-des{
+    font-size: 25px;
+    line-height: 30px;
+    height: auto;
+    margin: 15px 0 30px;
+}
+
+.product-price{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.product-actual-price{
+    font-size: 30px;
+    opacity: 0.5;
+    text-decoration: line-through;
+    margin: 0 20px;
+    font-weight: 300;
+}
+
+.product-discount{
+    color: #ff7d7d;
+    font-size: 20px;
+}
+
+.product-sub-heading{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 60px 0 10px;
+    font-weight: 300;
+}
+
+.size-radio-btn{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    font-size: 20px;
+    border: 0.5px solid #383838;
+    border-radius: 50%;
+    margin: 8px;
+    margin-left: 0px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+}
+
+.size-radio-btn.check{
+    background: #383838;
+    color: #fff;
+    
+}
+
+.btn{
+    width: 55%;
+    padding: 25px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #383838;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-transform: capitalize;
+    
+}
+
+.cart-btn{
+    margin-right: 2%;
+    background: #383838;
+    color: #fff;
+}
+.detail-des{
+    padding: 0 10vw;
+    text-transform: capitalize;
+}
+
+.heading{
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+.des{
+    color: #383838;
+    line-height: 25px;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 2%;
+    height: 2%;
+    position: absolute; top: -100px;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 8;
+}
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+.nxt-btn{
+    right: 0;
+}
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+}
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px){
+    .product-details{
+        width: 100%;
+        padding: 60px 10vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .image-slider{
+        width: 500px;
+        height: 500px;
+        position: relative;
+        background-image: url('../img/princess-dress.png');
+        background-size: cover;
+    }
+    
+    .product-images{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background: #fff;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100px;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    
+    .product-images img{
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    
+    .product-images img.active{
+        opacity: 0.5;
+    
+    }
+    
+    .details{
+        width: auto;
+    }
+    
+    .details .product-brand{
+        text-transform: capitalize;
+        font-size: 30px;
+    }
+    
+    .details .product-short-des{
+        font-size: 25px;
+        line-height: 30px;
+        height: auto;
+        margin: 15px 0 30px;
+    }
+    
+    .product-price{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    .product-actual-price{
+        font-size: 30px;
+        opacity: 0.5;
+        text-decoration: line-through;
+        margin: 0 20px;
+        font-weight: 300;
+    }
+    
+    .product-discount{
+        color: #ff7d7d;
+        font-size: 20px;
+    }
+    
+    .product-sub-heading{
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 60px 0 10px;
+        font-weight: 300;
+    }
+    
+    .size-radio-btn{
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        font-size: 20px;
+        border: 0.5px solid #383838;
+        border-radius: 50%;
+        margin: 8px;
+        margin-left: 0px;
+        line-height: 65px;
+        text-transform: uppercase;
+        color: #383838;
+        cursor: pointer;
+    }
+    
+    .size-radio-btn.check{
+        background: #383838;
+        color: #fff;
+        
+    }
+    
+    .btn{
+        width: 30%;
+        padding: 25px;
+        border-radius: 5px;
+        background: none;
+        border: 1px solid #383838;
+        color: #383838;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 20px 0;
+        text-transform: capitalize;
+        
+    }
+    
+    .cart-btn{
+        margin-right: 2%;
+        background: #383838;
+        color: #fff;
+        max-width: 5000px;
+    }
+    .detail-des{
+        padding: 0 10vw;
+        text-transform: capitalize;
+    }
+    
+    .heading{
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+    
+    .des{
+        color: #383838;
+        line-height: 25px;
+    }
+    .pre-btn, .nxt-btn{
+        border: none;
+        width: 0%;
+        height: 0%;
+        position: absolute; top: -100px;
+        top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 8;
+    }
+    .pre-btn{
+        left: 0;
+        transform: rotate(180deg);
+    }
+    .nxt-btn{
+        right: 0;
+    }
+    .pre-btn img, .nxt-btn img{
+        opacity: 0.2;
+    }
+    .pre-btn:hover img, .nxt-btn:hover img{
+        opacity: 1;
+    }
+          
+}
